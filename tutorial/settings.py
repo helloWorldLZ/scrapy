@@ -87,19 +87,19 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # =========================== 以下都是自定义 =======================
-# LOG_FILE = 'logs/page_dangdang.txt'
-# LOG_FILE = 'logsTM/test.txt'
-# DOWNLOAD_TIMEOUT = 300
+LOG_FILE = 'laptop.txt'
+DOWNLOAD_TIMEOUT = 300
 RETRY_TIMES = 10
 RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408, 429, 400]
 DUPEFILTER_DEBUG = True
-SPLASH_URL = 'http://192.168.99.100:8050'
+SPLASH_URL = 'http://127.0.0.1:8050'
 SPLASH_COOKIES_DEBUG = True
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
 IMAGES_STORE = 'imgs'
 MONGO_URI = 'mongodb://localhost:27017/'
-# MONGO_DATABASE = ''
+MONGO_DATABASE = 'jd'
+COLLECTION_NAME = 'laptop'
 
 USER_AGENTS = [
     "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
